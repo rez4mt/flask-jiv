@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="Flask JIV",
-    version="0.0.3",
+    version="0.0.1",
     description="Validates JSON request body for flask endpoints",
     long_description=README,
     long_description_content_type="text/markdown",
