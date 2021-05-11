@@ -1,3 +1,5 @@
 .venv/*
 Flask_JIV.egg-info/*
 .idea/
+build/*
+dist/*

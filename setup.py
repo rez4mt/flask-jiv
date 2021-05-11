@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="Flask JIV",
-    version="0.0.1",
+    version="0.0.3",
     description="Validates JSON request body for flask endpoints",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -24,5 +24,5 @@ setup(
     ],
     packages=["flask_json_validator"],
     include_package_data=True,
-    install_requires=["flask", "flask-inputs", 'jsonschema'],
+    install_requires=["Flask>=1.1.2", "flask-inputs>=0.3.0", 'jsonschema>=3.2.0', 'future>=0.18.2'],
 )
