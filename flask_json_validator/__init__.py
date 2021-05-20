@@ -19,6 +19,8 @@ def validate_input(schema, response):
         def func_wrapper(*args, **kwargs):
             input_validity = InputValidator(request=flask_request, schema=schema)
             if not input_validity.validate():
+                if callable(response):
+                    return response(input_validity.errors)
                 return response
             return f(*args, **kwargs)
 
